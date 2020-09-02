@@ -23,11 +23,11 @@ public class SalesTax {
     countyTax = price * 0.02;
     grandTotal = price + stateTax + countyTax;
 
-    System.out.println("Purchase price: " + purchase);
-    System.out.println("State tax: " + stateTax);
-    System.out.println("County tax: " + countyTax);
-    System.out.println("Total tax: " + (stateTax + countyTax));
-    System.out.println("Grand Total: " + grandTotal);
+    System.out.println("Purchase price: $" + purchase);
+    System.out.println("State tax: $" + stateTax);
+    System.out.println("County tax: $" + countyTax);
+    System.out.println("Total tax: $" + (stateTax + countyTax));
+    System.out.println("Grand Total: $" + grandTotal);
 
   }
 }
