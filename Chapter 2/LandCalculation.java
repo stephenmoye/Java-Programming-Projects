@@ -5,7 +5,9 @@
 
 public class LandCalculation {
   public static void main(String[] args) {
-    int acreCount, acre = 43560, landSize = 389767;
+    int acreCount;
+    int acre = 43560;
+    int landSize = 389767;
 
     acreCount = landSize / acre;
     System.out.print("There are " + acreCount + " acres in " + landSize + " square feet");
