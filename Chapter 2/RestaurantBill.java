@@ -15,7 +15,7 @@ public class RestaurantBill {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("How much was your bill?");
+    System.out.print("How much was your bill? ");
     price = input.nextDouble();
 
     tax = price * 0.0675;

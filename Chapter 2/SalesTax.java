@@ -18,7 +18,7 @@ public class SalesTax {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.print("How much was your purchase?");
+    System.out.print("How much was your purchase? ");
     price = input.nextDouble();
     stateTax = price * 0.04;
     countyTax = price * 0.02;
