@@ -10,16 +10,12 @@ import java.util.Scanner;
 
 public class SalesTax {
   public static void main(String[] args) {
-    double price;
-    double stateTax;
-    double countyTax;
-    double totalTax;
-    double grandTotal;
+    double price, stateTax, countyTax, totalTax, grandTotal;
 
     Scanner input = new Scanner(System.in);
-
     System.out.print("How much was your purchase? ");
     price = input.nextDouble();
+
     stateTax = price * 0.04;
     countyTax = price * 0.02;
     totalTax = stateTax + countyTax;
