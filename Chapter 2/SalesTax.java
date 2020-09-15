@@ -6,28 +6,32 @@
 // (which is the sum of the amount of purchase plus the total sales tax). Hint: Use the value
 // 0.02 to represent 2 percent, and 0.04 to represent 4 percent.
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class SalesTax {
   public static void main(String[] args) {
-    String purchase;
     double price;
     double stateTax;
     double countyTax;
+    double totalTax;
     double grandTotal;
 
-    purchase = JOptionPane.showInputDialog("How much was your purchase?");
+    Scanner input = new Scanner(System.in);
 
-    price = Double.parseDouble(purchase);
+    System.out.print("How much was your purchase?");
+    price = input.nextDouble();
     stateTax = price * 0.04;
     countyTax = price * 0.02;
-    grandTotal = price + stateTax + countyTax;
+    totalTax = stateTax + countyTax;
+    grandTotal = price + totalTax;
 
-    System.out.println("Purchase price: $" + purchase);
+    System.out.println("Purchase price: $" + price);
     System.out.println("State tax: $" + stateTax);
     System.out.println("County tax: $" + countyTax);
-    System.out.println("Total tax: $" + (stateTax + countyTax));
+    System.out.println("Total tax: $" + totalTax);
     System.out.println("Grand Total: $" + grandTotal);
+
+    input.close();
 
   }
 }
