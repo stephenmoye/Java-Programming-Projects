@@ -1,0 +1,38 @@
+\n new line
+\t tab
+\b backspace
+\r carriage return
+\\ backslash escaped
+\' single quote
+\' double quote
+
+a bit is a BInary digiT
+
+byte = 8 bits
+
+Variables and Literals
+- variable is a location in the computers memory
+- a literal is the literal value written into code
+- In Java you must define the number and type of Variables a program needs
+-> floating point is a number with decimal 123.45600022
+- must define variable and type before giving a value
+- a string literal cannot span lines, will cause error
+
+Identifiers
+- classes
+- variables
+- methods
+-> may not be named same as reserved words
+-> first char may not be digit 
+-> letters, numbers, digits, underscores, $ (case sensitive, no spaces)
+
+Primitive data types
+- byte
+- short
+- int (eger)
+- long
+- float
+- double
+- boolean
+- char
+
