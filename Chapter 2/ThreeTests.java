@@ -4,26 +4,20 @@
 
 import java.util.Scanner;
 
-public class TestAverage {
+public class ThreeTests {
   public static void main(String[] args) {
-    int test1;
-    int test2;
-    int test3;
-
     Scanner input = new Scanner(System.in);
 
     System.out.print("1st score: ");
-    test1 = input.nextInt();
+    int test1 = input.nextInt();
     System.out.print("2nd score: ");
-    test2 = input.nextInt();
+    int test2 = input.nextInt();
     System.out.print("3rd score: ");
-    test3 = input.nextInt();
+    int test3 = input.nextInt();
 
     int average = (test1 + test2 + test3) / 3;
 
     System.out.println("Test average: " + average);
-
-    input.close();
 
   }
 }
