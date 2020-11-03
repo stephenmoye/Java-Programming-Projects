@@ -7,6 +7,29 @@
 // •	 If a customer purchases 4 or more books, he or she earns 60 points.
 // Write a program that asks the user to enter the number of books that he or she has purchased this month and then displays the number of points awarded.
 
-public class BookClub {
+import java.util.Scanner;
 
+public class BookClub {
+  public static void main(String[] args) {
+    int books, points;
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("How many books did you purchase this month? ");
+    books = input.nextInt();
+
+    if (books <= 0) {
+      points = 0;
+    } else if (books == 1) {
+      points = 5;
+    } else if (books == 2) {
+      points = 15;
+    } else if (books == 3) {
+      points = 30;
+    } else {
+      points = 60;
+    }
+    System.out.println ("You have been awarded " + points + " points.");
+
+    input.close();
+  }
 }

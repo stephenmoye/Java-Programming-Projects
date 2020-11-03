@@ -8,5 +8,11 @@
 // should then calculate and display the bank’s service fees for the month.
 
 public class BankCharges {
-
+  public static void main(String[] args) {
+    System.out.print("hello world");
+    int a = 5, b = 10, c = 15, d = 20;
+    if (b <= c)
+      System.out.println(b + "  " + c);
+    a = a + b;
+  }
 }
