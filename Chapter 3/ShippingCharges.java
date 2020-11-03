@@ -28,7 +28,7 @@ public class ShippingCharges {
     } else {
       rate = 3.80;
     }
-    System.out.println("Shipping charge: $" + rate);
+    System.out.print("Shipping charge: $" + rate);
 
     input.close();
   }
