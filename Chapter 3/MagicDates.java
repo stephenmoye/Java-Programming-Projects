@@ -5,6 +5,29 @@
 // to the year. If so, it should display a message saying the date is magic. Otherwise, it should
 // display a message saying the date is not magic.
 
-public class MagicDates {
+import java.util.Scanner;
 
+public class MagicDates {
+  public static void main(String[] args) {
+  System.out.println("-=Magic Date Detector=-");
+  System.out.println("Please input all dates as MM/DD/YY (2 digits)");
+
+  int month, day, year;
+  Scanner input = new Scanner(System.in);
+
+  System.out.print("What is the month? ");
+  month = input.nextInt();
+  System.out.print("What is the day? ");
+  day = input.nextInt();
+  System.out.print("What is the year? ");
+  year = input.nextInt();
+
+  if (month * day == year) {
+    System.out.print(month + "/" + day + "/" + year + " IS a Magic Date! :)");
+  } else {
+    System.out.print(month + "/" + day + "/" + year + " is NOT Magic Date! :(");
+  }
+  input.close();
+
+  }
 }
