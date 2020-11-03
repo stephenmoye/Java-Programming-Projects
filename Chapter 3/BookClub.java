@@ -28,7 +28,7 @@ public class BookClub {
     } else {
       points = 60;
     }
-    System.out.println ("You have been awarded " + points + " points.");
+    System.out.println("You have been awarded " + points + " points.");
 
     input.close();
   }

@@ -8,6 +8,38 @@
 // the letter of the package the customer has purchased (A, B, or C) and the number of hours
 // that were used. It should then display the total charges.
 
-public class ISP {
+import java.util.Scanner;
 
+public class ISP {
+  public static void main(String[] args) {
+    String plan;
+    Double hours, total = 0.00, price = 0.00;
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Which package letter do you have? ");
+    plan = input.next();
+
+    System.out.print("How many hours did you use this month? ");
+    hours = input.nextDouble();
+
+    if (plan.equals("A") || plan.equals("a")) {
+      price = 9.95;
+      total = (hours * 2) + price;
+    } else if (plan.equals("B") || plan.equals("b")) {
+      price = 13.95;
+      total = (hours * 1) + price;
+    } else if (plan.equals("C") || plan.equals("c")) {
+      price = 19.95;
+      total = price;
+    } else {
+      System.out.print("Please enter a valid package. ");
+    }
+
+    // Do not provide a total if an invalid package name is provided
+    if (total > 0) {
+      System.out.println("Your total charges are $" + total);
+    }
+
+    input.close();
+  }
 }
