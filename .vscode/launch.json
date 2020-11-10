@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-CircuitBoardProfit<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "CircuitBoardProfit",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-LandCalculation<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "LandCalculation",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-RestaurantBill<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "RestaurantBill",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-SalesPrediction<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "SalesPrediction",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-SalesTax<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "SalesTax",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-TestAverage<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "TestAverage",
+      "projectName": "Java_e80acf"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-ThreeTests<Java_e80acf>",
+      "request": "launch",
+      "mainClass": "ThreeTests",
+      "projectName": "Java_e80acf"
+    }
+  ]
+}
