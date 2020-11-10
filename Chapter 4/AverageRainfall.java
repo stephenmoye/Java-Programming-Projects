@@ -12,22 +12,24 @@ import java.util.Scanner;
 
 public class AverageRainfall {
   public static void main(String[] args) {
-    int years;
-    double monthRain;
+    int years, totalMonths;
+    double monthRain, totalRain = 0;
     Scanner input = new Scanner(System.in);
 
     System.out.print("Over how many years did the rainfall occur? ");
     years = input.nextInt();
-    
-    for(int y = 0; y < years; y++) {
-      for(int m = 0; m < 12; m++) {
-        double totalRain;
-        System.out.print("How much did it rain in month," + m + "? ");
+
+    for (int y = 0; y < years; y++) {
+      System.out.println("Year " + (y + 1));
+      for (int m = 1; m < 13; m++) {
+        System.out.print("How many inches did it rain in month " + m + "? ");
         monthRain = input.nextDouble();
         totalRain += monthRain;
       }
-      System.out.print("It rained " + totalRain + " inches in" + years * 12 + " months.");
     }
-      input.close();
+    totalMonths = years * 12;
+    System.out.println("It rained a total of " + totalRain + " inches in " + totalMonths + " months.");
+    System.out.println("It rained an average of " + (totalRain / totalMonths) + " inches each month.");
+    input.close();
   }
 }
