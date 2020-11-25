@@ -34,5 +34,6 @@ public class DistanceTraveled {
       System.out.print("Negative values are not accepted. Please enter a positive value.");
     }
 
+    input.close();
   }
 }
