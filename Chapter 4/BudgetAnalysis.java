@@ -26,16 +26,3 @@ public class BudgetAnalysis {
     input.close();
   }
 }
-
-
-
-// budget = float(input('What is your budget? '))
-// total = 0
-
-// while total < budget:
-//   expense = float(input('What is the price of your purchase? '))
-//   total += expense
-
-// print('You are over budget!')
-// print('Budget:', budget)
-// print('Total:', total)
