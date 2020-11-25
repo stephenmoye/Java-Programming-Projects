@@ -30,5 +30,7 @@ public class LargestAndSmallest {
     }
     System.out.println("Smallest: " + smallest);
     System.out.print("Largest: " + largest);
+
+    input.close();
   }
 }
