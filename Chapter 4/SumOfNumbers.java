@@ -19,6 +19,6 @@ public class SumOfNumbers {
       }
     }
     System.out.println(sum);
-
+    input.close();
   }
 }
