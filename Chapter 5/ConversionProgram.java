@@ -45,6 +45,70 @@
 // Enter your choice: 4 [Enter]
 // Bye!
 
+import java.util.Scanner;
+
 public class ConversionProgram {
-  
+
+  public static void main(String[] args) {
+    int meters = distance();
+    menuOptions(meters);
+
+  }
+
+  public static int distance() {
+    int meters;
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter a distance in meters: ");
+    meters = input.nextInt();
+
+    return meters;
+  }
+
+  public static void menuOptions(int meters) {
+    int choice;
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("1. Convert to kilometers");
+    System.out.println("2. Convert to inches");
+    System.out.println("3. Convert to feet");
+    System.out.println("4. Quit the program");
+    System.out.print("Enter your choice: ");
+    choice = input.nextInt();
+
+    if (choice == 1) {
+      showKilometers(meters);
+    } else if (choice == 2) {
+      showInches(meters);
+    } else if (choice == 3) {
+      showFeet(meters);
+    } else {
+      quit();
+    }
+  }
+
+  public static void showKilometers(int meters) {
+    double kilometers = meters * 0.001;
+
+    System.out.println(meters + " meters is " + kilometers + " kilometers.");
+    menuOptions(meters);
+  }
+
+  public static void showInches(int meters) {
+    double inches = meters * 39.37;
+
+    System.out.println(meters + " meters is " + inches + " kilometers.");
+    menuOptions(meters);
+  }
+
+  public static void showFeet(int meters) {
+    double feet = meters * 3.281;
+
+    System.out.println(meters + " meters is " + feet + " kilometers.");
+    menuOptions(meters);
+  }
+
+  public static void quit() {
+    System.out.println("Bye!");
+  }
 }
